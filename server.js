@@ -8,9 +8,7 @@ const port = process.env.PORT || 8080;
 corsProxy.createServer({
     originWhitelist: [
       'http://localhost:3000',
-      'http://localhost:5000',
-      'https://app.racquetrivalry.com',
-      'https://gamedayinteractive-1c17b.web.app/'
+      'https://app.racquetrivalry.com'
     ],
     requireHeader: ['origin', 'x-requested-with'],
     removeHeaders: ['cookie', 'cookie2']
