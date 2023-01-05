@@ -9,7 +9,7 @@ corsProxy.createServer({
     originWhitelist: [
       'http://localhost:3000',
       'http://localhost:5000',
-      'https://app.racquetrivalry.com'
+      'https://app.racquetrivalry.com',
       'https://gamedayinteractive-1c17b.web.app/'
     ],
     requireHeader: ['origin', 'x-requested-with'],
