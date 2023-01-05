@@ -12,7 +12,7 @@ corsProxy.createServer({
       'https://app.racquetrivalry.com'
       'https://gamedayinteractive-1c17b.web.app/'
     ],
-    requireHeader: ['origin', 'x-requested-with'],
+    requireHeader: ['origin', 'x-requested-with', 'Access-Control-Allow-Origin'],
     removeHeaders: ['cookie', 'cookie2']
 }).listen(port, host, () => {
     console.log('Running CORS Anywhere on ' + host + ':' + port);
